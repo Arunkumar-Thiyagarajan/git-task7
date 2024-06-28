@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset-"UTF-8">
+        <meta name="viewport" content="widht-device-width, initial-scaler-1.0"
+        <title>Documents</title>
+        <body>
+            <script>
+                let totalpopulation = new XMLHttpRequest();
+                totalpopulation.open('GET','https://population.eu/rest/v2/all','true');
+                totalpopulation.onload=function(){
+                    let totalpopulation = countries.reduce((acc, current) =>{
+                   return acc + current.population;
+} ,0);
+                }
+            </script>
+        </body>
+    </head>
+</html>

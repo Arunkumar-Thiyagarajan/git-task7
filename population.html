@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang-"en">
+    <head>
+        <meta charset-"UTF-8">
+        <meta name="viewport" content="widht-device-width, initial-scaler-1.0"
+        <title>Documents</title>
+    </head>
+    <body>
+        <script>
+        let population=new XMLHttpRequest();
+        population.open("GET","https://restcountries.com/v2/all");
+        population.onload=function(){
+            let population = countries.filter(country =>
+             country.population < 200000);
+        }
+
+             console.log(population);
+            </script>
+    </body>
+
+</html>
